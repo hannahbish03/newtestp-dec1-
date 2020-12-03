@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class exit : MonoBehaviour
+public class Exit : MonoBehaviour
 {
-    void Exit()
+    
+   [SerializeField] public void Quit()
     {
         Application.Quit();
         Debug.Log("Game is exiting");
