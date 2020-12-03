@@ -5,11 +5,16 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
 
+    // public int Score { get { return score; } }
+    [SerializeField]
+    public int score;
+    int collectables;
     public float jumpHeight = 4;
     public float timeToJumpApex = .4f;
     float accelerationTimeAirborne = .2f;
     float accelerationTimeGrounded = .1f;
     public float moveSpeed = 20;
+
 
     float gravity;
     float jumpVelocity;
@@ -25,6 +30,7 @@ public class Player : MonoBehaviour
         gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
         print("Gravity: " + gravity + "  Jump Velocity: " + jumpVelocity);
+        score = 0;
     }
 
     void Update()
@@ -65,4 +71,12 @@ public class Player : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
+
+ 
+
+
+
+
 }
+
+
