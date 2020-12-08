@@ -15130,8 +15130,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003986394}
   m_LocalRotation: {x: 0.00035628883, y: -0.00043156784, z: 0.70776653, w: -0.7064463}
-  m_LocalPosition: {x: 151, y: 337, z: -0}
-  m_LocalScale: {x: 92.34239, y: 122.23626, z: 1}
+  m_LocalPosition: {x: 151.2, y: 422.1, z: 0}
+  m_LocalScale: {x: 102.544716, y: 122.23626, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -20650,6 +20650,16 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3072367885636174673, guid: 6d9829b7e94bcd24ba0e706092b1ce10,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072367885636174673, guid: 6d9829b7e94bcd24ba0e706092b1ce10,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 3072367885636174678, guid: 6d9829b7e94bcd24ba0e706092b1ce10,
         type: 3}
       propertyPath: m_Name
